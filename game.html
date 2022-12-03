@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="assets/img/welcome/plane.png" type="image/png">
+    <link rel="stylesheet" href="css/game-style.css">
+    <title>Expo Lexington 2022 - Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="route-indicator">
+            <h2 id="route-placeholder">7</h2>
+        </div>
+        <div class="cotes">
+            <div class="left">
+                <div class="diapo-image-section">
+                    <div id="diapo-placeholder">
+                        <img id="diapo-to-place" src="#" alt="">
+                    </div>
+                </div>
+                <div class="diapo-text-section">
+                    <div id="text-placeholder">
+                        
+                    </div>
+                </div>
+                <div id="prop-section">
+
+                        <div class="button-area" data-prop="1">
+                            <div class="prop-button" data-valid="false" id="propA-button">
+                                <h3>A)</h3>
+                                <p class="prop-text" id="propA-text"></p>
+                                <div class="need-money" id="need-moneyA">
+                                    <p id="money-numberA"></p>
+                                    <img class="pts" id="money-imageA" src="#" alt="">
+                                </div>
+                                <div class="need-object" id="need-objectA">
+                                    <img class="pts" id="object-imageA" src="#" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="button-area" data-prop="2">
+                            <div class="prop-button" data-valid="false" id="propB-button">
+                                <h3>B)</h3>
+                                <p class="prop-text" id="propB-text"></p>
+                                <div class="need-money" id="need-moneyB">
+                                    <p id="money-numberB"></p>
+                                    <img class="pts" id="money-imageB" src="#" alt="">
+                                </div>
+                                <div class="need-object" id="need-objectB">
+                                    <img class="pts" id="object-imageB" src="#" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="button-area" data-prop="3">
+                            <div class="prop-button" data-valid="false" id="propC-button">
+                                <h3>C)</h3>
+                                <p class="prop-text" id="propC-text"></p>
+                                <div class="need-money" id="need-moneyC">
+                                    <p id="money-numberC"></p>
+                                    <img class="pts" id="money-imageC" src="#" alt="">
+                                </div>
+                                <div class="need-object" id="need-objectC">
+                                    <img class="pts" id="object-imageC" src="#" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="button-area" data-prop="4">
+                            <div class="prop-button" data-valid="false" id="propD-button">
+                                <h3>D)</h3>
+                                <p class="prop-text" id="propD-text"></p>
+                                <div class="need-money" id="need-moneyD">
+                                    <p id="money-numberD"></p>
+                                    <img class="pts" id="money-imageD" src="#" alt="">
+                                </div>
+                                <div class="need-object" id="need-objectD">
+                                    <img class="pts" id="object-imageD" src="#" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+            <div class="right">
+                <div class="team-table">
+                    <div class="team-name-place">
+                        <div class="team-name-placeholder">
+                            <h2 id="team-name">Team name</h2>
+                        </div>
+                    </div>
+                    <div class="avatars-place">
+                        <div id="avatars-placeholder">
+
+                        </div>
+                    </div>
+                    <div class="account-place">
+                        <div class="account">
+                            <div class="money-count item">
+                                <img class="pts" src="assets/img/points/money.png" alt="💶">
+                                <p class="money" id="money-placeholder"></p>
+                            </div>
+                            <div class="culture-count item">
+                                <img class="pts" src="assets/img/points/culture.png" alt="🏛">
+                                <p class="culture" id="culture-placeholder"></p>
+                            </div>
+                            <div class="fun-count item">
+                                <img class="pts" src="assets/img/points/fun.png" alt="😄">
+                                <p class="fun" id="fun-placeholder"></p>
+                            </div>
+                            <div class="pictures-count item">
+                                <img class="pts" src="assets/img/points/pictures.png" alt="🏞">
+                                <p class="pictures" id="pictures-placeholder"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inventory-place">
+                        <img class="backpack pts" src="assets/img/points/objects.png" alt="">
+                        <div id="inventory">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="images-section">
+                    <div id="images-placeholder">
+                        <img id="image-to-place" src="assets/img/pictures/jardin-chateau-de-versailles.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="paths.js"></script>
+    <script src="scripts/game.js"></script>
+    <script src="scripts/images.js"></script>
+</body>
+</html>

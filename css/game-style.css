@@ -1,0 +1,435 @@
+@font-face {
+    font-family: "Lato Regular";
+    src: url("../assets/font/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato Black";
+    src: url("../assets/font/Lato/Lato-Black.ttf");
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    src: url("../assets/font/Lato/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: "BebasNeue Bold";
+    src: url("../assets/font/BebasNeue/Commercial/TTF/BebasNeue-Bold.ttf");
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    border: 0;
+    font-family: "Lato Regular", sans-serif;
+    background-color: black;
+}
+
+h1 {
+    margin: 0;
+    font-family: "BebasNeue Bold", sans-serif;
+}
+
+h2 {
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: whitesmoke;
+}
+
+ul {
+    padding-left: 0;
+}
+
+button {
+    font-family: "Lato Bold", sans-serif;
+}
+
+strong {
+    font-family: "Lato Bold", sans-serif;
+    font-size: 1.05rem;
+    text-decoration: underline;
+}
+
+.little {
+    font-size: 0.9rem;
+    color: rgb(116, 116, 116);
+}
+
+.money {
+    color: #00c90d
+}
+
+.culture {
+    color: #7a00ff;
+}
+
+.fun {
+    color: #002bff;
+}
+
+.pictures {
+    color: #eaac02;
+}
+
+.objects {
+    color: #ff0000;
+}
+
+.pts {
+    max-width: 30px;
+    max-height: 30px;
+    position: relative;
+    top: 5px;
+}
+
+.avatar {
+    max-height: 25px;
+    max-width: 25px;
+    position: relative;
+    right: 5px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.route-indicator {
+    position: absolute;
+    top: 0.3%;
+    left: 0.3%;
+}
+
+.route-indicator h2 {
+    font-size: 1.5rem;
+}
+
+.cotes {
+    height: 100%;
+    display: flex;
+}
+
+.left {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../assets/img/welcome/background.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left .diapo-image-section {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px dashed rgb(50, 5, 89);
+    padding-bottom: 0.4%;
+    background-color: rgba(0, 0, 0, .55);
+}
+
+#diapo-placeholder {
+    width: 825px;
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#diapo-to-place {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.left .diapo-text-section {
+    height: 30%;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+#text-placeholder {
+    text-align: center;
+}
+
+#text-to-place {
+    color: whitesmoke;
+    word-spacing: 3px;
+    font-size: large;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.left #prop-section {
+    height: 20%;
+    background-image: url("../assets/img/welcome/city.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left .button-area {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.left .button-area[data-prop="2"] {
+    left: 50%;
+    bottom: 50%;
+}
+
+.left .button-area[data-prop="3"] {
+    bottom: 50%;
+}
+
+.left .button-area[data-prop="4"] {
+    left: 50%;
+    bottom: 100%;
+}
+
+.left .prop-button {
+    width: 90%;
+    height: 75%;
+    background-color: rgba(0, 0, 0, .65);
+    color: whitesmoke;
+}
+
+.left .prop-button[data-valid="true"] {
+    border: rgb(12, 209, 12) 5px solid;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.left .prop-button[data-valid="false"] {
+    border: red 5px solid;
+    border-radius: 20px;
+}
+
+.left .prop-button:hover {
+    transform: scale(1.02);
+}
+
+.left .prop-button h3 {
+    width: 5%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lato Black";
+}
+
+.left .prop-button .prop-text {
+    width: 62.5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+    bottom: 100%;
+    left: 7.5%;
+    font-family: "Lato Regular";
+    font-size: 0.93rem;
+}
+
+.left .prop-button .need-money {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 72.5%;
+    bottom: 231%;
+}
+
+.left .prop-button .need-money p {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lato Bold";
+}
+
+.left .prop-button .need-money img {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    top: -110%;
+}
+
+.left .prop-button .need-object {
+    width: 10%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 90%;
+    bottom: 338%;
+}
+
+.left .button-area[data-prop="3"] .prop-button .need-object {
+    bottom: 205%;
+}
+
+.left .prop-button .need-object img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 27.5%;
+}
+
+.right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .65);
+}
+
+.right .team-table {
+    height: 60%;
+    background-image: url("../assets/img/welcome/game.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right .team-name-place {
+    width: 100%;
+    height: 7%;
+    background-color: rgba(0, 0, 0, .55);
+}
+
+.right .team-name-place h2 {
+    text-align: center;
+    text-decoration: underline wavy red;
+}
+
+.right .avatars-place {
+    width: 100%;
+    height: 7%;
+    background-color: rgba(0, 0, 0, .55);
+}
+
+.right .avatars-place #avatars-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .avatars-place #avatars-placeholder img {
+    margin-left: 2%;
+}
+
+.right .account-place {
+    width: 100%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, .55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .account-place .account {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px dashed rgb(23, 60, 164);
+    border-radius: 5px;
+    background-color: white;
+}
+
+.right .account-place .account .item {
+    width: 90%;
+    height: 30px;
+    display: flex;
+    margin-bottom: 5%;
+    border-bottom: 3px dotted black;
+}
+
+.right .account-place .account .item img {
+    margin-right: 50%;
+    background-color: white;
+}
+
+.right .account-place .account .item p {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 30%;
+    font-family: "Lato Black";
+    background-color: white;
+}
+
+.right .inventory-place {
+    width: 100%;
+    height: 26%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .55);
+}
+
+.right .inventory-place .backpack {
+    max-width: 40px;
+    max-height: 40px;
+    position: relative;
+    right: 2.5%;
+    top: -2.5%;
+}
+
+.right .inventory-place #inventory {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    border: 4px dashed #ff0000;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.right .inventory-place #inventory img {
+    margin-top: 1%;
+    margin-left: 1%;
+    border: 2px dotted black;
+    border-radius: 10px;
+    background-color: rgb(236, 236, 236);
+}
+
+.right .images-section {
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px dashed whitesmoke;
+    border-top: 2px dashed whitesmoke;
+    border-top-left-radius: 5px;
+}
+
+#images-placeholder {
+    width: 432px;
+    height: 251px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image-to-place {
+    max-width: 100%;
+    max-height: 100%;
+}

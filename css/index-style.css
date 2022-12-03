@@ -1,0 +1,384 @@
+@font-face {
+    font-family: "Lato Regular";
+    src: url("../assets/font/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato Black";
+    src: url("../assets/font/Lato/Lato-Black.ttf");
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    src: url("../assets/font/Lato/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: "BebasNeue Bold";
+    src: url("../assets/font/BebasNeue/Commercial/TTF/BebasNeue-Bold.ttf");
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    border: 0;
+    background-color: black;
+    font-family: "Lato Regular", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .55);
+}
+
+.title {
+    background-image: url("../assets/img/welcome/city.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 7%;
+}
+
+.title h1 {
+    margin-top: 0.1%;
+    text-align: center;
+    color: beige;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+h1 {
+    margin: 0;
+    font-family: "BebasNeue Bold", sans-serif;
+}
+
+h2 {
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ul {
+    padding-left: 0;
+}
+
+button {
+    font-family: "Lato Bold", sans-serif;
+}
+
+strong {
+    font-family: "Lato Bold", sans-serif;
+    font-size: 1.05rem;
+    text-decoration: underline;
+}
+
+.little {
+    font-size: 0.9rem;
+    color: rgb(116, 116, 116);
+}
+
+.money {
+    color: #00c90d
+}
+
+.culture {
+    color: #7a00ff;
+}
+
+.fun {
+    color: #002bff;
+}
+
+.pictures {
+    color: #eaac02;
+}
+
+.objects {
+    color: #ff0000;
+}
+
+.cotes {
+    height: 100%;
+    display: flex;
+}
+
+.left {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-image: url("../assets/img/welcome/background.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.story-pts, .images-section {
+    background-color: rgba(0, 0, 0, .55);
+}
+
+.story-pts {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.story-pts .story {
+    background-color: white;
+    margin: 0;
+    border: 5px dashed rgb(21, 195, 23);
+    border-radius: 5px;
+    width: 60%;
+    margin-left: 2%;
+}
+
+.story-pts .story h2 {
+    padding-left: 2%;
+    text-align: left;
+    text-decoration: underline wavy red;
+}
+
+.story-pts .story ul li {
+    list-style: none;
+    font-size: 0.95rem;
+    margin-bottom: 1.5%;
+    text-align: center;
+    border-bottom: dotted 1px #c4c4c4;
+}
+
+.story-pts .story ul li.formula {
+    font-size: 0.75rem;
+    border-bottom: none;
+}
+
+.story-pts .story ul li.formula img {
+    max-width: 25px;
+}
+
+.story-pts .pts-pres {
+    background-color: white;
+    margin: 0;
+    border: 5px dashed rgb(39, 22, 147);
+    border-radius: 5px;
+    width: 30%;
+    margin-right: 2%;
+}
+
+.story-pts .pts-pres ul li {
+    list-style: none;
+}
+
+.images-section {
+    height: 64.4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#images-placeholder {
+    background-color: white;
+    border: 5px dashed rebeccapurple;
+    border-radius: 5px;
+    width: 750px;
+    height: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image-to-place {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.pts {
+    max-width: 30px;
+    max-height: 30px;
+    position: relative;
+    top: 5px;
+}
+
+.right {
+    width: 35%;
+    background-image: url("../assets/img/welcome/ticket.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.right button {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.right button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.right button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.right .teams-title {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right .teams-title h2 {
+    text-decoration: underline wavy rebeccapurple;
+    background-color: rgba(255, 255, 255, .85);
+}
+
+.right .create-team-button {
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right #teams {
+    height: 64%;
+    width: 100%;
+    padding-top: 5%;
+    overflow-y: scroll;
+}
+
+.right .team {
+    margin-bottom: 5%
+}
+
+.right .team-name-block, .right .member {
+    position: relative;
+    left: 15%;
+    margin-bottom: 3%;
+    display: flex;
+    width: 85%;
+}
+
+.right .team-name-block:hover .actions, .right .member:hover .actions {
+    visibility: visible;
+}
+
+.right .member img.avatar {
+    width: 10%;
+}
+
+.right input.team-name {
+    width: 60%;
+    padding-bottom: 2%;
+    border: none;
+    border-bottom: 3px solid cornflowerblue;
+    font-family: "Lato Bold", sans-serif;
+    font-size: 1.1rem;
+}
+
+.right input.member-name {
+    width: 50%;
+    border: none;
+    border-bottom: 2px solid grey;
+    font-family: "Lato Regular", sans-serif;
+    font-size: 0.90rem;
+}
+
+.right input.team-name:focus {
+    outline: none;
+    border-color: rgb(47, 110, 227);
+}
+
+.right input.member-name:focus {
+    outline: none;
+    border-color: rgb(74, 74, 74);
+}
+
+.right .actions {
+    display: flex;
+    visibility: hidden;
+    width: 40%;
+}
+
+.right .actions img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.right .play-button {
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pres {
+    max-height: 25px;
+    max-width: 25px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.avatar {
+    max-height: 25px;
+    max-width: 25px;
+    position: relative;
+    right: 5px;
+}

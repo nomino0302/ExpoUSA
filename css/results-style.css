@@ -1,0 +1,193 @@
+@font-face {
+    font-family: "Lato Regular";
+    src: url("../assets/font/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato Black";
+    src: url("../assets/font/Lato/Lato-Black.ttf");
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    src: url("../assets/font/Lato/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: "BebasNeue Bold";
+    src: url("../assets/font/BebasNeue/Commercial/TTF/BebasNeue-Bold.ttf");
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    border: 0;
+    background-color: black;
+    background-image: url("../assets/img/welcome/city.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Lato Regular", sans-serif;
+}
+
+.place {
+    font-family: "Lato Black", sans-serif;
+}
+
+.first {
+    color: gold;
+}
+
+.second {
+    color: silver;
+}
+
+.third {
+    color: #cd7f32;
+}
+
+.other {
+    color: rgb(124, 33, 184)
+}
+
+.team-name {
+    font-family: "Lato Regular", sans-serif;
+}
+
+.total {
+    font-family: "Lato Bold", sans-serif;
+    color: rebeccapurple;
+}
+
+.total-img {
+    max-width: 35px;
+    max-height: 35px;
+    position: relative;
+    top: 5px;
+}
+
+.container {
+    margin: 0 25% 0 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-left: 3px dashed rebeccapurple;
+    border-right: 3px dashed rebeccapurple;
+}
+
+h2 {
+    width: 100%;
+    height: 10%;
+    text-decoration: underline wavy royalblue;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px dashed rgb(210, 200, 200);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.2rem;
+}
+
+#results {
+    width: 100%;
+    height: 80%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px dashed rgb(210, 200, 200);
+}
+
+#results .team-line {
+    width: 100%;
+    height: 10%;
+    background-color: rgb(241, 233, 233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 1.5%;
+    font-size: 2rem;
+}
+
+#results .team-line p {
+    margin-left: 5%;
+}
+
+.home-button {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: crimson;
+}
+
+button {
+    width: 20%;
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+button:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+button:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }

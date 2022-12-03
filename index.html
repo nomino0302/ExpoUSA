@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="assets/img/welcome/plane.png" type="image/png">
+    <link rel="stylesheet" href="css/index-style.css">
+    <title>Expo Lexington 2022</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Destination: France! 🥊🇫🇷</h1>
+        </div>
+        <div class="cotes">
+            <div class="left">
+                <div class="story-pts">
+                    <div class="story">
+                        <h2>Story</h2>
+                        <ul>
+                            <li>Your class decided to organize a school trip to France for a few days, but y'all decided to challenge each other by spliting you in groups!</li>
+                            <li>You and your group need to makes decisions to discover France and win (or loose!) different kind of points!</li>
+                            <li>The group with the most points win the game!</li>
+                            <li class="formula"><strong>Total pts</strong> = (<img class="pts" src="assets/img/points/culture.png" alt="🏛"> * 1) + (<img class="pts" src="assets/img/points/fun.png" alt="😄"> * 1) + (<img class="pts" src="assets/img/points/pictures.png" alt="🏞"> * 1) + (<img class="pts" src="assets/img/points/money.png" alt="💶"> * 0.01) + (<img class="pts" src="assets/img/points/objects.png" alt="🎒">'s use)</li>
+                        </ul>
+                    </div>
+                    <div class="pts-pres">
+                        <ul>
+                            <li class="money"><img class="pts" src="assets/img/points/money.png" alt="💶"> Money <span class="little">(100€ = 1pt)</span></li>
+                            <li class="culture"><img class="pts" src="assets/img/points/culture.png" alt="🏛"> Culture points</li>
+                            <li class="fun"><img class="pts" src="assets/img/points/fun.png" alt="😄"> Fun points</li>
+                            <li class="pictures"><img class="pts" src="assets/img/points/pictures.png" alt="🏞"> Pictures points <span class="little">(4pts each)</span></li>
+                            <li class="objects"><img class="pts" src="assets/img/points/objects.png" alt="🎒"> Objects</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="images-section">
+                    <div id="images-placeholder">
+                        <img id="image-to-place" src="assets/img/pictures/jardin-chateau-de-versailles.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <!-- Teams making -->
+                <div class="teams-title">
+                    <h2>Teams</h2>
+                </div>
+                <div class="create-team-button">
+                    <button type="button" id="create-team">Create team 👫</button>
+                </div>
+                <!-- Teams -->
+                <div id="teams">
+                    <!-- Team 1 -->
+                    <div class="team" id="team1" data-team="1">
+                        <!-- Team 1 name -->
+                        <div class="team-name-block">
+                            <input type="text" class="team-name" data-team="1" placeholder="Team 1">
+                            <div class="actions">
+                                <img src="assets/img/welcome/actions/emoji.png" alt="😀" class="emoji-team pres">
+                                <img src="assets/img/welcome/actions/random.png" alt="🎲" class="random-team pres">
+                                <img src="assets/img/welcome/actions/plus.png" alt="➕" class="add-member pres" data-team="1">
+                            </div>
+                        </div>
+                        <!-- End team 1 name -->
+                        <div class="members" id="members-team1" data-team="1">
+                            <!-- Member 1 team 1 -->
+                            <div class="member" id="member1-team1" data-team="1" data-member="1">
+                                <img class="avatar" src="assets/img/avatars/Robot_Avatars_1.png" alt="">
+                                <input type="text" class="member-name" data-team="1" data-member="1" placeholder="Player 1">
+                                <div class="actions">
+                                    <img src="assets/img/welcome/actions/emoji.png" alt="😀" class="emoji-member pres">
+                                    <img src="assets/img/welcome/actions/random.png" alt="🎲" class="random-member pres">
+                                </div>
+                            </div>
+                            <!-- End member 1 team 1 -->
+                            <!-- Member 2 team 1 -->
+                            <div class="member" id="member2-team1" data-team="1" data-member="2">
+                                <img class="avatar" src="assets/img/avatars/Robot_Avatars_10.png" alt="">
+                                <input type="text" class="member-name" data-team="1" data-member="2" placeholder="Player 2">
+                                <div class="actions">
+                                    <img src="assets/img/welcome/actions/emoji.png" alt="😀" class="emoji-member pres">
+                                    <img src="assets/img/welcome/actions/random.png" alt="🎲" class="random-member pres">
+                                    <img src="assets/img/welcome/actions/minus.png" alt="➖" class="remove-member pres" data-team="1" data-member="2">
+                                </div>
+                            </div>
+                            <!-- End member 2 team 1 -->
+                        </div>
+                    </div>
+                    <!-- End team 1 -->
+                    <!-- Team 2 -->
+                    <div class="team" id="team2" data-team="2">
+                        <!-- Team 2 name -->
+                        <div class="team-name-block">
+                            <input type="text" class="team-name" data-team="2" placeholder="Team 2">
+                            <div class="actions">
+                                <img src="assets/img/welcome/actions/emoji.png" alt="😀" class="emoji-team pres">
+                                <img src="assets/img/welcome/actions/random.png" alt="🎲" class="random-team pres">
+                                <img src="assets/img/welcome/actions/plus.png" alt="➕" class="add-member pres" data-team="2">
+                            </div>
+                        </div>
+                        <!-- End team 2 name -->
+                        <div class="members" id="members-team2" data-team="2">
+                            <!-- Member 1 team 2 -->
+                            <div class="member" id="member1-team2" data-team="2" data-member="1">
+                                <img class="avatar" src="assets/img/avatars/Robot_Avatars_11.png" alt="">
+                                <input type="text" class="member-name" data-team="2" data-member="1" placeholder="Player 1">
+                                <div class="actions">
+                                    <img src="assets/img/welcome/actions/emoji.png" alt="😀" class="emoji-member pres">
+                                    <img src="assets/img/welcome/actions/random.png" alt="🎲" class="random-member pres">
+                                </div>
+                            </div>
+                            <!-- End member 1 team 2 -->
+                            <!-- Member 2 team 2 -->
+                            <div class="member" id="member2-team2" data-team="2" data-member="2">
+                                <img class="avatar" src="assets/img/avatars/Robot_Avatars_12.png" alt="">
+                                <input type="text" class="member-name" data-team="2" data-member="2" placeholder="Player 2">
+                                <div class="actions">
+                                    <img src="assets/img/welcome/actions/emoji.png" alt="😀" class="emoji-member pres">
+                                    <img src="assets/img/welcome/actions/random.png" alt="🎲" class="random-member pres">
+                                    <img src="assets/img/welcome/actions/minus.png" alt="➖" class="remove-member pres" data-team="2" data-member="2">
+                                </div>
+                            </div>
+                            <!-- End member 2 team 2 -->
+                        </div>
+                    </div>
+                    <!-- End team 2 -->
+                </div>
+                <!-- End teams -->
+                <div class="play-button">
+                    <button type="button" id="play">Play! ✈️</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/teams.js"></script>
+    <script src="scripts/images.js"></script>
+</body>
+</html>
